@@ -1,3 +1,5 @@
+const API_KEY = "AIzaSyB43iabNZtWAOkzOcFZZ2SG1pVRLv6EBQo"
+const SHEET_ID = "1IqtzSgdlRj6gJkWxb3IE8fw8CtPuIRLeWuR3m_eL9XE"
 url = "https://sheets.googleapis.com/v4/spreadsheets/" + SHEET_ID + "/values/A:A?key=" + API_KEY;
 try {
     var response = {};

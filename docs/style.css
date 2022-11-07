@@ -3,7 +3,7 @@ body {
     text-align: center;
     font-family: Helvetica;
 }
-p {
+<!-- p {
     border: 2px;
     border: solid;
     border-color: #a09d9c;
@@ -12,11 +12,42 @@ p {
 
     padding: 16px;
     margin: auto;
+-->
 }
-.center {
+.mainhub {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    animation-name: intro;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes intro {
+    0%   {background-color:rgb(255, 139, 31); top:-1000px;}
+    100% {background-color:rgba(255, 139, 31, 0); top:10px;}
+    
+  }
+
+  .center {
     padding: 220px 0;
     text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation-name: itext;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
 }
+@keyframes itext {
+    0%   {top:40px;}
+    25%  {top:-20px;}
+    50%  {top:30px;}
+    60%  {top:-10px;}
+    100% {background-color:rgba(255, 139, 31, 0); top:2px;}
+  }
+
 .bottom {
     position: absolute;
     bottom: 10px;

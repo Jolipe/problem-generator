@@ -1,4 +1,4 @@
-url = "https://sheets.googleapis.com/v4/spreadsheets/1IqtzSgdlRj6gJkWxb3IE8fw8CtPuIRLeWuR3m_eL9XE/values/A:A?key=AIzaSyB43iabNZtWAOkzOcFZZ2SG1pVRLv6EBQo";
+const url = "https://sheets.googleapis.com/v4/spreadsheets/1EuK_QS2OM5okp9crEOTUEauN3946YOeQQXoFrk-SlYc/values/A:A?key=AIzaSyDcHjeMlWHYJqSTl7xQXrtjLPG3VxwniUE";
 try {
     var response = {};
 
@@ -12,7 +12,7 @@ try {
 }
 catch(err) {
     console.log(err);
-}
+};
 
 var usedProb = ["-"];
 var usedProbNum = 0;
@@ -36,7 +36,7 @@ function randomProblem() {
         usedProb.shift();
     };
     document.getElementById("problems").innerHTML = newText;
-;}
+}
 
 function handleBack() {
     if (usedProbNum > 0) {
@@ -44,7 +44,7 @@ function handleBack() {
         document.getElementById("problems").innerHTML = usedProb[usedProbNum];
     } else {
         alert("This is the last problem saved.");
-    }
+    };
 };
 
 function handleFoward() {
@@ -53,5 +53,5 @@ function handleFoward() {
         document.getElementById("problems").innerHTML = usedProb[usedProbNum];
     } else {
         alert("There are no problems after here.");
-    }
+    };
 };

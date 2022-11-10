@@ -21,7 +21,7 @@ function randomProblem() {
     var isNew = true;
     var newText = "";
     while (isNew) {
-        randomNum = Math.floor(Math.random() * (problems_list.length - 2)) + 2;
+        randomNum = Math.floor(Math.random() * (problems_list.length));
         newText = problems_list[randomNum][0];
         isNew = false;
         for (let i = 0; i <= usedProb.length - 1; i++) {
@@ -36,6 +36,7 @@ function randomProblem() {
         usedProb.shift();
     };
     document.getElementById("problems").innerHTML = newText;
+    changeVis();
 }
 
 function handleBack() {
@@ -55,3 +56,11 @@ function handleFoward() {
         alert("There are no problems after here.");
     };
 };
+function changeVis() {
+    const titles = ["a", "b", "c"];
+    var random = Math.floor(Math.random() * titles.length);
+    for (i = 0; i < titles.length; i++) {
+        document.getElementById(titles[i]).style.visibility = "hidden";
+    }
+    document.getElementById(titles[random]).style.visibility = "visible";
+}

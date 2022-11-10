@@ -20,7 +20,6 @@ body {
 h1 {
     font-family: Outfit;
     font-weight: 300;
-    font
 }
 
 .mainhub {
@@ -78,4 +77,13 @@ button {
 }
 button:hover {
     text-shadow: 2px 2px 2px lightskyblue;
+}
+#a {
+    visibility: visible;
+}
+#b {
+    visibility: hidden;
+}
+#c {
+    visibility: hidden;
 }

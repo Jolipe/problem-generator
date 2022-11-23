@@ -92,4 +92,5 @@ button:hover {
 }
 .container {
     position: relative;
+    align: center;
 }

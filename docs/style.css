@@ -179,3 +179,19 @@ button {
 button:hover {
     text-shadow: 2px 2px 2px lightskyblue;
 }
+#a {
+    position: absolute;
+    visibility: visible;
+}
+#b {
+    position: absolute;
+    visibility: hidden;
+}
+#c {
+    position: absolute;
+    visibility: hidden;
+}
+.container {
+    position: relative;
+    align: center;
+}

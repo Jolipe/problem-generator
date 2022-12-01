@@ -55,3 +55,14 @@ function handleFoward() {
         alert("There are no problems after here.");
     }
 };
+
+
+const effectz = ["a", "b", "c", "d", "e"];
+const randomEffect = effectz[Math.floor(Math.random() * effectz.length)];
+
+setTimeout(() => {
+let div = document.querySelector('header');
+div.classList.add(randomEffect);
+}, 2000);
+
+

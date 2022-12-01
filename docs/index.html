@@ -5,17 +5,16 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-  
     <div class="center">
-      <h1>
+      <h1 class="header">
         Problem Generator
       </h1>
       <p id="problems">
         -
       </p>
       <form>
-        <button type="button" onclick="randomProblem()"; >GENERATE PROBLEM</button>
-        <div id="hisbutt">
+        <button class="gen" type="button" onclick="randomProblem()"; >GENERATE PROBLEM</button>
+        <div class="hisbutt">
           <div>
             <button type="button" onclick="handleBack()"> <img src="images/left_arrow_vec.png" alt="Go Back!" style="width:20px;height:15px;" > </button>
           </div>
@@ -25,8 +24,13 @@
         </div>
       </form>
     </div>
-    <div class="bottom">
-      <a href="https://github.com/Jolipe">Github</a>
+
+    <div class="footer">
+      <div class = "footer_content"> 
+        <a href="https://github.com/Jolipe">Github</a>
+        Jolipe Is Cool!
+      </div>
+      
     </div>
   </body>
 </html>

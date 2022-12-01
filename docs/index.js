@@ -56,3 +56,12 @@ function handleFoward() {
         alert("There are no problems after here.");
     };
 };
+
+function changeVis() {
+    const titles = ["a", "b", "c"];
+    var random = Math.floor(Math.random() * titles.length);
+    for (i = 0; i < titles.length; i++) {
+        document.getElementById(titles[i]).style.visibility = "hidden";
+    }
+    document.getElementById(titles[random]).style.visibility = "visible";
+}
